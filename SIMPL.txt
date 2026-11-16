@@ -1,0 +1,84 @@
+'ProgramMode:RUN
+"1.NEW 2.RESUME"?->S
+If S=2
+Then Goto 1
+IfEnd
+
+
+"Rx Const"?->M
+"Cx Vars"?->N
+{M+1,N+M+1}->Dim Mat A
+
+ClrText
+"ENTER COEFFICIENTS"
+For 1->I To M+1
+For 1->J To N+M+1
+ClrText
+"ROW"
+IDisps"COL"
+JDisps?->Mat A[I,J]
+Next
+Next
+
+
+Lbl 1
+ClrText
+"finding pivot"
+
+
+0->C:0->L
+For 1->J To N+M
+If Mat A[M+1,J]<L
+Then Mat A[M+1,J]->L:J->C
+IfEnd
+Next
+
+
+If L>=0
+Then Goto 2
+IfEnd
+
+
+9.9Exp99->R:0->P
+For 1->I To M
+If Mat A[I,C]>0
+Then Mat A[I,N+M+1]/Mat A[I,C]->Q
+If Q<R
+Then Q->R:I->P
+IfEnd
+IfEnd
+Next
+
+
+If P=0
+Then 
+ClrText
+"UNBOUNDED"
+Goto 3
+IfEnd
+
+
+ClrText
+"ENTERING COL"
+CDisps"PIVOT ROW"
+PDisps
+
+1/Mat A[P,C]->List 6[1]
+*Row List 6[1],A,P
+
+For 1->I To M+1
+If I<>P
+Then -Mat A[I,C]->List 6[2]
+*Row+ List 6[2],A,P,I
+IfEnd
+Next
+Mat ADisps
+
+Goto 1
+
+
+Lbl 2
+ClrText
+"OPTIMAL FOUND"DispsMat ADisps
+
+Lbl 3
