@@ -10,7 +10,8 @@ Why CasioBASIC instead of Python?? -> Because the Python implementation on recen
 
 FILES:
 
-SIMPL.g3m: simplex algorithm file ready to upload to your Casio calculator using usb or 3-pin connector.
+SIMPL.g3m: simplex algorithm file ready to upload to your more recent Casio calculator (like a fx CG50) using usb or 3-pin connector. (FILE FORMAT g3m)
+SIMPL.g1m: simplex algorithm file ready to upload to your older Casio calculator (like a fx 9860G) using usb or 3-pin connector. (FILE FORMAT g1m)
 TBLCOLNM.g3m: name of the "tableau" column names for manual simplex algorithm calculation by hand.
 SIMPL.txt: text of the script in the SIMPL.g3m file, for review.
 
@@ -22,9 +23,10 @@ Casio fx 9860 SD: Chapters 2.8 and 8.
 Casio fx CG50: Chapters 2.8 and 8.
 
 EDITING AND COMPILING THE FILES:
+
 Core Compiler: SourceCoder 3
 **** https://www.cemetech.net/sc/ ****
-Platform: A web-based development environment and compiler hosted on Cemetech (cemetech.net).
+Platform: A web-based development environment and compiler hosted on Cemetech (cemetech.net). View image.
 
 Role: It acts as the bridge between standard text and Casio's proprietary binary format. It reads your text-based code (using ASCII macros for special symbols like _Disp_ for ◢, >= for ≥, and != for ≠) and compiles it into the exact machine code the calculator understands.
 
