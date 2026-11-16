@@ -1,7 +1,7 @@
 # casio-BASIC-simplex-dual
 Casio BASIC Simplex and Dual Linear Programming
 
-++++ To download everything, click the dropdown gree button and select "download ZIP" ++++
+++++ To download everything, click the dropdown green *<> Code* button and select "download ZIP" ++++
 
 This is a Casio BASIC implementation of the Simplex algorithm for linear programming optimization, as well as for Dual problems, intended for students' use and small size problems.
 It is coded in Casio BASIC language, compatible with most of the "modern" casio programmable calculators.
