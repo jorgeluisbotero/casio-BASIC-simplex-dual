@@ -50,3 +50,8 @@ Export Formats: It allows you to select and download your compiled script direct
 The original platform to create and edit files for these calculators is the Casio FA-124 Software, which at the time of publishing this is unavailable online.
 
 
+USING THE SCRIPT.
+
+Please refer to the example file "Simplex example for using the CasioBASIC script.pdf" to see a solved excercise from start to completion using the SIMPL.g3m script.
+
+
