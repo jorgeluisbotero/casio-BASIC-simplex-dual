@@ -8,21 +8,36 @@ It has been tested and run successfully on a Casio fx 9860 G SD (requires *.g1m 
 
 Why CasioBASIC instead of Python?? -> Because the Python implementation on recent Casio calculators lack the libraries necessary to manipulate matrices and other mathematical objects, while they are fully supported on the older CasioBASIC language.
 
+
+
+
+
 FILES:
 
+
 SIMPL.g3m: simplex algorithm file ready to upload to your more recent Casio calculator (like a fx CG50) using usb or 3-pin connector. (FILE FORMAT g3m)
+
 SIMPL.g1m: simplex algorithm file ready to upload to your older Casio calculator (like a fx 9860G) using usb or 3-pin connector. (FILE FORMAT g1m)
+
 TBLCOLNM.g3m: name of the "tableau" column names for manual simplex algorithm calculation by hand.
+
 SIMPL.txt: text of the script in the SIMPL.g3m file, for review.
 
 DUALLP.g3m: dual linear programming file ready to upload to your Casio calculator using usb or 3-pin connector.
 
+
+
 UPLOADING TO CALCULATOR:
+
+
 To upload files to your calculator, check the user's manual. There are manuals provided here (Spanish and English) for the two Casio calculator models used for testing, most other Casio calculators will work in a similar or exact same way.
 Casio fx 9860 SD: Chapters 2.8 and 8.
 Casio fx CG50: Chapters 2.8 and 8.
 
+
+
 EDITING AND COMPILING THE FILES:
+
 
 Core Compiler: SourceCoder 3
 **** https://www.cemetech.net/sc/ ****
